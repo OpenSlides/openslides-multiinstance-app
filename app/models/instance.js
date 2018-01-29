@@ -27,7 +27,6 @@ export default DS.Model.extend({
   event_description: DS.attr('string'),
   event_date: DS.attr('string'),
   event_location: DS.attr('string'),
-  event_organizer: DS.attr('string'),
 
   projector_logo: DS.attr('string'),
   projector_logo_url: Ember.computed('projector_logo', function() {
