@@ -27,8 +27,13 @@ const validations = {
 export default Ember.Component.extend({
   store: Ember.inject.service(),
   changeset: function () {
-    return new Changeset(this.get('instance'), lookupValidator(validations), validations);
-  }.property('instance'),
+    let changeset = new Changeset(this.get('instance'), lookupValidator(validations), validations);
+    changeset.set('osversion', this.get('defaultVersion'));
+    return changeset;
+  }.property('instance', 'versions'),
+  defaultVersion: Ember.computed('versions.@each', function() {
+    return this.get('versions').filter((version) => {return version.get('default');})[0];
+  }),
 
   versionSort: ['id:desc'],
   sortedVersions: Ember.computed.sort('versions', 'versionSort'),
