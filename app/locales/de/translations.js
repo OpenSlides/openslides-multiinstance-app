@@ -12,7 +12,6 @@ export default {
     'event-description': 'Kurzbeschreibung',
     'event-date': 'Veranstaltungszeitraum',
     'event-location': 'Veranstaltungsort',
-    'event-organizer': 'Veranstalter',
     'parent-domain': 'Domain',
     'admin-username': 'Benutzername',
     'admin-password': 'Passwort',

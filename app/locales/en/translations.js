@@ -10,7 +10,6 @@ export default {
     'event-description': 'Short description',
     'event-date': 'Event date',
     'event-location': 'Event location',
-    'event-organizer': 'Organizer',
     'admin-first-name': 'Given name',
     'admin-last-name': 'Surname',
     'parent-domain': 'Domain',
