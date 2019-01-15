@@ -1,8 +1,0 @@
-{{#if autofocus}}
-  {{#auto-focus}}
-    {{input value=value class="form-control" key-up="update" enter="enterPressed" autofocus=autofocus}}
-  {{/auto-focus}}
-{{else}}
-  {{input value=value class="form-control" key-up="update" enter="enterPressed" autofocus=false}}
-{{/if}}
-{{input-errors model=model field=field}}
